@@ -49,13 +49,13 @@ url = "2.2"
 webpki-roots = { version = "0.21", optional = true }
 
 [replace]
-"tokio:1.1.1" = { git = "https://github.com/fussybeaver/tokio", branch = "ND-named-pipes" }
+"tokio:1.2.0" = { git = "https://github.com/fussybeaver/tokio", branch = "ND-named-pipes" }
 
 [dev-dependencies]
 env_logger = "0.8"
 flate2 = "1.0"
 tar = "0.4"
-tokio = { version = "1.2", features = ["time", "fs", "net", "rt", "rt-multi-thread", "macros"] }
+tokio = { version = "1.2.0", features = ["time", "fs", "net", "rt", "rt-multi-thread", "macros"] }
 
 [target.'cfg(unix)'.dependencies]
 hyperlocal =  { version = "0.8.0" }
